@@ -1,0 +1,14 @@
+{% set nav_links = [
+    ('html1.html', 'HTML1'),
+    ('css1.html', 'Schedule'),
+    ('html2.html', 'Workshops'),
+    ('css2.html', 'Location'),
+    ('htmlconcepts.html', 'Accommodation'),
+    ('advanced.html', 'Advanced HTML'),
+    ('resources.html', 'Resources')
+] -%}
+{% set active_page = active_page -%}
+
+{% for href, name in nav_links %}
+  <li><a href="{{ href }}">{{ name }}</a>
+{% endfor %}
